@@ -1,4 +1,4 @@
-#SC - iso-noise
+# SC - iso-noise
 
 Little learning project using C language.
 
