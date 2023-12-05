@@ -1,7 +1,7 @@
 CC = gcc
 
-CFLAGS = -Wall -pthread -g -lSDL2 -lSDL2main
-LDLIBS = -lm -lpthread 
+CFLAGS = -Wall -g -lSDL2 -lSDL2main
+LDLIBS = -lm  
 
 SRC = src
 OBJ = obj
