@@ -10,6 +10,9 @@
 void InitSDL(SDLContext *context);
 
 void QuitSDL(SDLContext *context);
+
+void SetDrawColor(SDLContext context, Color color);
+
 #endif
 
 

@@ -8,4 +8,6 @@ typedef struct {
     SDL_Renderer *renderer;
 } SDLContext;
 
+typedef int Color;
+
 #endif

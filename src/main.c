@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <assert.h>
 
+#include "graphics/colors.h"
 #include "graphics/sdl_util.h"
 #include "types.h"
 
@@ -19,11 +20,13 @@ int main(void) {
         /*renderer =*/ NULL,
     };
 
-    // Link Cleanup function to on_exit. ThLs is a UNIX-only function.
+    // Link Cleanup function to on_exit. This is a UNIX-only function.
     int exit = on_exit((void (*)(int, void *))Cleanup, &context);
     assert(exit == 0);
 
     InitSDL(&context);
+    SetDrawColor(context, BLACK);
+
     sleep(3);
     return 0;
 }
